@@ -36,12 +36,15 @@ const ImageForm = ({
       <form onSubmit={handleClick}>
         {errorMessage && (
           <div className='error__container alert alert--danger'>
-            {' '}
-            <FontAwesomeIcon
-              icon={faExclamationTriangle}
-              style={{ marginRight: '.5rem' }}
-            />
-            {errorMessage}
+            <div className='error__body'>
+              <FontAwesomeIcon
+                icon={faExclamationTriangle}
+                style={{ marginRight: '.5rem' }}
+                className='error__sign'
+              />
+              <p className='error__title'>{errorMessage}</p>
+            </div>
+
             <button className='btn btn__close' onClick={handleErrorAlert}>
               &times;
             </button>
