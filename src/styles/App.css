@@ -42,15 +42,16 @@ body::after {
   outline: none;
   text-transform: uppercase;
   font-weight: 800;
-  transition: all 150ms ease-in;
+  transition: all 100ms ease-in;
   margin-bottom: 1.5rem;
-}
-
-.btn:hover {
   opacity: 0.8;
 }
 
-.btn:focuse,
+.btn:hover {
+  opacity: 1;
+}
+
+.btn:focus,
 .btn:active {
   outline: none;
 }
@@ -76,11 +77,12 @@ body::after {
   opacity: 0.75;
   font-size: 1.5rem;
   margin: 0;
-  transition: transform 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 .btn__close:hover {
   transform: scale(1.5);
+  opacity: 1;
 }
 
 .container {

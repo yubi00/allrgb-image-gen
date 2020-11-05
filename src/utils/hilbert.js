@@ -10,7 +10,7 @@ export default function generateHilbertCurve(order, index, createVector) {
   let vertex = points[i]
 
   for (let j = 1; j < order; j++) {
-    index = index >>> 2 //zero fill right shifting  first two bits
+    index = index >>> 2 //zero fill right shifting two bits
     i = index & 3 //bit masking last two bits
     let len = Math.pow(2, j) //get the length
     switch (i) {
