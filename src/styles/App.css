@@ -42,13 +42,14 @@ body::after {
   outline: none;
   text-transform: uppercase;
   font-weight: 800;
-  transition: all 100ms ease-in;
+  transition: all 50ms ease-in;
   margin-bottom: 1.5rem;
   opacity: 0.8;
 }
 
 .btn:hover {
   opacity: 1;
+  font-size: 1.25rem;
 }
 
 .btn:focus,
